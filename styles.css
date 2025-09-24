@@ -107,3 +107,18 @@ p {
   color: var(--text-primary);
   background: var(--bg-hover);
 }
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 2rem 4rem;
+  min-height: calc(100vh - 120px);
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
