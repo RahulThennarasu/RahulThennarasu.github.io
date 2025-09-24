@@ -279,3 +279,75 @@ main {
   background: var(--accent-blue);
   border-radius: 2px;
 }
+
+/* Resume entries */
+.entry {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.entry:hover {
+  background: var(--bg-hover);
+  border-color: var(--border);
+}
+
+.entry-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.entry-info {
+  color: var(--accent-green);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.75rem;
+}
+
+.entry-description {
+  list-style: none;
+  margin: 0;
+}
+
+.entry-description li {
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+  padding-left: 1rem;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.entry-description li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-blue);
+  font-weight: bold;
+}
+
+/* Download button */
+a[download] {
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent-blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+a[download]:hover {
+  background: #1a6ec7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(35, 131, 226, 0.3);
+}
