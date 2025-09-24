@@ -238,3 +238,44 @@ main {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(35, 131, 226, 0.3);
 }
+
+/* Resume */
+.resume {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 3rem;
+  margin: 2rem 0;
+  box-shadow: var(--shadow);
+}
+
+.section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent-blue);
+  border-radius: 2px;
+}
