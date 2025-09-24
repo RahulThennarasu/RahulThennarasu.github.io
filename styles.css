@@ -457,3 +457,14 @@ main > p:first-of-type {
   color: var(--text-secondary);
   margin-bottom: 2rem;
 }
+
+/* Footer */
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 4rem;
+}
