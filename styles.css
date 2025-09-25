@@ -400,9 +400,15 @@ a[download] {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto; /* auto margins for centering */
   transition: all 0.2s ease;
   font-size: 15px;
+}
+
+/* proper centering */
+.download-resume-container {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 a[download]:hover {
