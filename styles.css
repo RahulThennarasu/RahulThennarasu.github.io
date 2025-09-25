@@ -468,3 +468,59 @@ main > p:first-of-type {
   font-size: 14px;
   margin-top: 4rem;
 }
+
+/* Hero animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* animations for home page elements */
+.about {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.about-image {
+  animation: fadeInLeft 1s ease-out 0.2s both;
+}
+
+.about-text {
+  animation: fadeInRight 1s ease-out 0.4s both;
+}
+
+.about-text p:nth-child(1) { animation-delay: 0.6s; }
+.about-text p:nth-child(2) { animation-delay: 0.8s; }
+.about-text p:nth-child(3) { animation-delay: 1s; }
+.about-text p:nth-child(4) { animation-delay: 1.2s; }
+
+.page-title {
+  animation: fadeInUp 0.6s ease-out;
+}
